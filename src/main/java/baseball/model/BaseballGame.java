@@ -25,6 +25,10 @@ public class BaseballGame {
         return new BaseballGame(nonDuplicatedList);
     }
 
+    public List<Integer> getRandoms() {
+        return this.randoms;
+    }
+
     public int getAnswerCountByInputs(List<Integer> inputs) {
         AtomicInteger count = new AtomicInteger();
         this.randoms.forEach(random -> {
